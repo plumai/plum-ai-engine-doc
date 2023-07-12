@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Plum AI Engine</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Plum AI Engine</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#welcome-to-plum-ai-engine-documentation" class="nav-link">Welcome to Plum AI Engine Documentation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#what-problem-does-plum-ai-engine-solve" class="nav-link">What problem does Plum AI Engine solve?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#additional-features-provided-for-plum-ai-toolbox" class="nav-link">Additional features provided for Plum AI Toolbox</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#how-to-use-plum-ai-engine-for-plum-ai-toolbox" class="nav-link">How to use Plum AI Engine for Plum AI Toolbox</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#how-to-extend-plum-ai-engine" class="nav-link">How to extend Plum AI Engine</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#the-infrastructure-of-plum-ai-engine" class="nav-link">The infrastructure of Plum AI Engine</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#more" class="nav-link">More</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="welcome-to-plum-ai-engine-documentation">Welcome to Plum AI Engine Documentation</h1>
+<p><strong>Plum AI Engine</strong> is a <strong>personal</strong> backend service for <strong>Plum AI Toolbox</strong>. It provides a REST API for <strong>Plum AI
+Toolbox</strong> to
+access the data and models.</p>
+<p><strong>Plum AI Engine</strong> is still an early version. Source code for <strong>Plum AI Engine</strong> is available
+at <a href="https://github.com/plumai/plum-ai-engine">Github: Plum AI Engine</a>.</p>
+<p><strong>Plum AI Toolbox</strong> is a Android application that provides a set of tools related to AI.
+You can download it
+from <a href="https://play.google.com/store/apps/details?id=com.kevin2023.plumaitoolbox">Google Play: Plum AI</a>.
+<strong>Plum AI Toolbox</strong> is still an early version too.</p>
+<pre><code>Plum AI Toolbox is not open source now, Because it has some commercial components.
+We may create a open source version in the future.
+</code></pre>
+<h2 id="what-problem-does-plum-ai-engine-solve">What problem does <strong>Plum AI Engine</strong> solve?</h2>
+<p>We can use mobile phones anytime and anywhere,
+and we also hope that AI can help us,
+but currently AI requires very powerful computing power,
+the performance of mobile phones cannot meet the requirements,
+commercial services are either too expensive,
+or cannot meet our diverse needs,
+so we create this project builds mobile AI experience based on personal computing infrastructure.</p>
+<h2 id="additional-features-provided-for-plum-ai-toolbox">Additional features provided for <strong>Plum AI Toolbox</strong></h2>
+<h3 id="1-text-to-image-task">1. Text to image task</h3>
+<p>We implemented a simple text-to-image task relying on HuggingFace.
+If you configure the HuggingFace API key, you can use it.</p>
+<p>Of course, you can also implement the relevant logic yourself.</p>
+<h3 id="2-image-to-text-task">2. Image to text task</h3>
+<p>We implemented a simple image-to-text task relying on HuggingFace.
+If you configure the HuggingFace API key, you can use it.</p>
+<p>Of course, you can also implement the relevant logic yourself.</p>
+<h3 id="3-custom-ai-engine-task">3. Custom AI Engine task</h3>
+<p>We provide a generic function for your own custom tasks.</p>
+<h2 id="how-to-use-plum-ai-engine-for-plum-ai-toolbox">How to use <strong>Plum AI Engine</strong> for <strong>Plum AI Toolbox</strong></h2>
+<p>It can be used with HuggingFace, if you need data privacy, please deploy it on your own server.</p>
+<h3 id="deploy-plum-ai-engine-on-your-own-server">Deploy <strong>Plum AI Engine</strong> on your own server</h3>
+<p>You can use docker to deploy <strong>Plum AI Engine</strong>.</p>
+<p>Download source code from <a href="https://github.com/plumai/plum-ai-engine">Github: Plum AI Engine</a>, then build and run it.</p>
+<p>In order to use Huggingface, you need to configure the HUGGINGFACE_TOKEN environment variable.</p>
+<p>If you want to limit client access, please configure the CLIENT_ID_LIST environment variable, separated by commas.</p>
+<h3 id="deploy-plum-ai-engine-using-huggingface">Deploy <strong>Plum AI Engine</strong> using Huggingface</h3>
+<p>You can use HuggingFace to deploy <strong>Plum AI Engine</strong>.</p>
+<p>Just Duplicate this
+Space <a href="https://huggingface.co/spaces/kevinix2023/plum-ai-engine-preview">kevinix2023/plum-ai-engine-preview</a>, and make
+it public to use the direct url. the direct url is like this: <code>***.hf.space</code>. You can find it in the
+space <code>Embed this Space</code> section.</p>
+<p>In order to use Huggingface, you need to configure the HUGGINGFACE_TOKEN environment variable.</p>
+<p>If you want to limit client access, please configure the CLIENT_ID_LIST environment variable, separated by commas.</p>
+<h2 id="how-to-extend-plum-ai-engine">How to extend <strong>Plum AI Engine</strong></h2>
+<h2 id="the-infrastructure-of-plum-ai-engine">The infrastructure of <strong>Plum AI Engine</strong></h2>
+<h2 id="more">More</h2>
+<p>If you encounter any problems, including comments and suggestions, you can contact us, we are very happy to help you.</p>
+<p>We also welcome you to contribute source code.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.4.3
+Build Date UTC : 2023-07-12 10:24:10.935848+00:00
+-->
